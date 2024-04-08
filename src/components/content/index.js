@@ -134,7 +134,7 @@ const Pagecontent = () => {
         }}
       >
         <Typography.Title level={3}>
-          “antd is an enterprise-class UI design language and React UI library.”
+          “this is my editclass UI design language and React UI library.”
         </Typography.Title>
        
       </Flex>
