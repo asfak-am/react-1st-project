@@ -1,3 +1,31 @@
 .slick-dots > ul{
     width: 70%;
 };
+
+.ant-row{
+    justify-content: center;
+
+}
+
+.container{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.ima{
+    display: inline;
+  margin: 0 auto;
+  margin-left: -25%; 
+  height: 100%;
+  width: auto;
+}
+
+.about-content h1{
+    margin-top: 0;
+}
+.app .ant-layout .ant-row{
+    background-color: aqua;
+}

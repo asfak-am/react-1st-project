@@ -11,21 +11,21 @@ import {
 
 
 const imgStyle = {
-  display: 'block',
-  width: 273,
-  height: 273,
-  border:'01px solid #1677ff' ,
-  borderradius:'500%'
+ 
+  height:'250px',
+  width:'250px',
+  border:'2px solid black ',
+  borderradius:'23px'
+  
 };
 
 const { Text } = Typography;
 const cardStyle = {
   
   position:' absolute',
-  top: '190px',
-  right: '100px',
+  top: '155px',
+  right: '50px',
   width:' 45%',
-  height: '200px',
   lineHeight:'200px',
   color:'#1677ff',
   background: 'rgba( 255, 255, 255, 0.8 )',
@@ -37,13 +37,13 @@ const cardStyle = {
 };
 
 const contentStyle = {
-    height: '350px',
+    height: '340px',
     color: '#fff',
-    lineHeight: '350px',
+    lineHeight: '340px',
     textAlign: 'center',
     background: '#364d79',
     width:'70%',
-    margin:'50px 0 0 50px'
+    margin:'30px 0 0 50px'
     
   };
 const {Content} = Layout;
@@ -56,7 +56,7 @@ const Pagecontent = () => {
 
     <Content style={{padding: '0 0',}}>
      
-     <Carousel autoplay dots={false} >
+     <Carousel  dots={false} >
         <div >
         <h3 style={contentStyle}><Image preview={false} height={400} width={'100%'} src='https://newtecservices.ie/wp-content/uploads/2020/05/shutterstock_566877226-1536x830.jpg'/></h3>
         </div>
@@ -73,7 +73,7 @@ const Pagecontent = () => {
 
 
       <Card className='absolute' hoverable style={cardStyle} styles={{ body: { padding: 0, overflow: 'hidden' } }}>
-              <Flex justify="space-between">
+             
                 
                 <Flex vertical align="flex-end" justify="space-between" style={{ padding: 32, }}>
                   <Typography.Title  level={2} style={{color:'#1677ff',fontFamily:"Montserrat",fontWeight:'800',cursor:'default',textTransform:'uppercase'}}>
@@ -81,10 +81,10 @@ const Pagecontent = () => {
                   </Typography.Title>
                   
                 </Flex>
-              </Flex>
+              
       </Card >
 
-      <Row style={{ margin:'50px 0 0 50px' }}>
+      <Row style={{ margin:'30px 50px 50px 30px ' }}>
             <Col span={8}>
               
               <Flex vertical  justify='center' align='center'>  
@@ -116,30 +116,50 @@ const Pagecontent = () => {
 
             </Col>
        </Row>
+
+        {/* About us */}
+
+       <Row style={{ margin:'15px 50px 50px 50px' ,backgroundColor:'rgb(240 250 255)',border:'30px solid rgb(240 250 255)' }}>        
+            
+            
+        <Flex justify="space-around" >
+            <Image preview={false} style={{height:300,width:300,borderRadius:'50%'}}src='https://wallpapersmug.com/large/9f22ba/tropical-beach-top-view-sea-coast.jpg'/>
+            <Flex 
                 
-       {/* About us */}
-      <Card style={{ margin:'50px 0 0 50px' }}>
-       <Flex justify="space-between">
-      <img
-        alt="avatar"
-        src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-        style={imgStyle}
-      />
-      <Flex
-        vertical
-        align="flex-end"
-        justify="space-between"
-        style={{
-          padding: 32,
-        }}
-      >
-        <Typography.Title level={3}>
-          “this is my editclass UI design language and React UI library.”
-        </Typography.Title>
-       
-      </Flex>
-    </Flex>
-    </Card>
+                 className='about-content'
+                  vertical
+                  style={{
+                    padding: '0 32px',
+                    alignItems:'center',
+                    width:'50%',
+                    justifyContent:'center',
+                   
+                    
+                  }}
+            >
+                  <Typography.Title level={1}>
+                         About Us
+                  </Typography.Title>
+
+                  <Typography level={4} style={{margin:'0', textAlign:'justify'}}>
+                  ArugambayAgenda was born out of a passion for showcasing the diverse beauty and cultural richness of Arugambay, Sri Lanka. Founded by a group of local enthusiasts with deep ties to the region, the company aimed to provide a gateway for travelers to experience the authentic wonders of this coastal paradise.
+                  </Typography>
+            
+            </Flex>
+        </Flex>
+          
+
+      
+       </Row>
+       <Row style={{justifyContent:'center'}} >
+
+       <Typography.Title  level={1}> Types of Explore </Typography.Title>
+
+
+       </Row>
+
+
+
      </Content>
     );
 };
