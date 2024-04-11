@@ -10,14 +10,9 @@ import {
 
 
 
-const imgStyle = {
- 
-  height:'250px',
-  width:'250px',
-  border:'2px solid black ',
-  borderradius:'23px'
+
   
-};
+
 
 const { Text } = Typography;
 const cardStyle = {
@@ -84,8 +79,8 @@ const Pagecontent = () => {
               
       </Card >
 
-      <Row style={{ margin:'30px 50px 50px 30px ' }}>
-            <Col span={8}>
+      <Row style={{ margin:'30px 50px 50px 30px ' }} gutter={'24,24'} >
+            <Col xs={24}  md={12}  xl={8} >
               
               <Flex vertical  justify='center' align='center'>  
                 
@@ -95,7 +90,7 @@ const Pagecontent = () => {
               
             </Col>
 
-            <Col span={8}>
+            <Col  xs={24}  md={12}  xl={8}>
 
               <Flex vertical  justify='center' align='center'>  
 
@@ -106,7 +101,7 @@ const Pagecontent = () => {
             </Col>
 
 
-            <Col span={8}>
+            <Col  xs={24}  md={12}  xl={8}>
 
               <Flex vertical  justify='center' align='center'>  
 
@@ -119,34 +114,33 @@ const Pagecontent = () => {
 
         {/* About us */}
 
-       <Row style={{ margin:'15px 50px 50px 50px' ,backgroundColor:'rgb(240 250 255)',border:'30px solid rgb(240 250 255)' }}>        
+       <Row gutter={'24,24'} style={{ margin:'15px 50px 50px 50px' ,backgroundColor:'rgb(240 250 255)',border:'30px solid rgb(240 250 255)' }}>        
             
-            
-        <Flex justify="space-around" >
-            <Image preview={false} style={{height:300,width:300,borderRadius:'50%'}}src='https://wallpapersmug.com/large/9f22ba/tropical-beach-top-view-sea-coast.jpg'/>
-            <Flex 
-                
-                 className='about-content'
-                  vertical
-                  style={{
-                    padding: '0 32px',
-                    alignItems:'center',
-                    width:'50%',
-                    justifyContent:'center',
-                   
-                    
-                  }}
-            >
-                  <Typography.Title level={1}>
-                         About Us
-                  </Typography.Title>
+       
+       <Col xs={24}  lg={12}  xl={12} style={{padding:'20px'}}>   
+        
+        <Image preview={false} style={{height:300,width:300,borderRadius:'50%'}}src='https://wallpapersmug.com/large/9f22ba/tropical-beach-top-view-sea-coast.jpg'/>
+        
+    
+    </Col>    
 
-                  <Typography level={4} style={{margin:'0', textAlign:'justify'}}>
-                  ArugambayAgenda was born out of a passion for showcasing the diverse beauty and cultural richness of Arugambay, Sri Lanka. Founded by a group of local enthusiasts with deep ties to the region, the company aimed to provide a gateway for travelers to experience the authentic wonders of this coastal paradise.
-                  </Typography>
+      <Col xs={24}  lg={12}  xl={12} style={{padding:'20px'}}>
+     
             
-            </Flex>
-        </Flex>
+      
+
+              <Typography.Title level={1}>
+                     About Us
+              </Typography.Title>
+
+              <Typography level={4} style={{margin:'0', textAlign:'justify'}}>
+              ArugambayAgenda was born out of a passion for showcasing the diverse beauty and cultural richness of Arugambay, Sri Lanka. Founded by a group of local enthusiasts with deep ties to the region, the company aimed to provide a gateway for travelers to experience the authentic wonders of this coastal paradise.
+              </Typography>
+      
+        </Col>     
+        
+   
+       
           
 
       
