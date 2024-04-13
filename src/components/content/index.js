@@ -325,9 +325,12 @@ const Pagecontent = () => {
 <Row style={{display:'block',}}>
   <Col style={{margin:'0 50px'}}>
   
-  <Carousel className='cara' >
+  <Carousel >
     <div>
-      <h3 style={contentStyle2}><Avatar size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }} icon={<UserOutlined />} /></h3>
+      <h3 style={contentStyle2}><Card style={{background:'rgb(240 250 255)',color:'white'}}>
+                    <Avatar size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }} src={<img src={'https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p22962921_i_v9_aa.jpg'} alt="avatar" />} />
+                    <Meta description='&ldquo;ArugambayAgenda curated a seamless journey, blending surf adventures with cultural delights. An unforgettable Sri Lankan experience&rdquo;' title='Asfak Ahamed' />              
+        </Card></h3>
     </div>
     <div>
       <h3 style={contentStyle2}>
@@ -337,10 +340,16 @@ const Pagecontent = () => {
         </Card></h3>
     </div>
     <div>
-      <h3 style={contentStyle2}>3</h3>
+      <h3 style={contentStyle2}><Card style={{background:'rgb(240 250 255)',color:'white'}}>
+                    <Avatar size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }} src={<img src={'https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p22962921_i_v9_aa.jpg'} alt="avatar" />} />
+                    <Meta description='&ldquo;ArugambayAgenda curated a seamless journey, blending surf adventures with cultural delights. An unforgettable Sri Lankan experience&rdquo;' title='Asfak Ahamed' />              
+        </Card></h3>
     </div>
     <div>
-      <h3 style={contentStyle2}>4</h3>
+      <h3 style={contentStyle2}><Card style={{background:'rgb(240 250 255)',color:'white'}}>
+                    <Avatar size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }} src={<img src={'https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p22962921_i_v9_aa.jpg'} alt="avatar" />} />
+                    <Meta description='&ldquo;ArugambayAgenda curated a seamless journey, blending surf adventures with cultural delights. An unforgettable Sri Lankan experience&rdquo;' title='Asfak Ahamed' />              
+        </Card></h3>
     </div>
   </Carousel>
 
